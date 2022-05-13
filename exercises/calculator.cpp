@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int insert_number(int& num1, int& num2)
+void insert_number(int& num1, int& num2)
 {
    cin >> num1 >> num2;
 }
