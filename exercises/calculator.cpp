@@ -1,12 +1,22 @@
-/*
-  Write a program that given two numbers as input make the main operations.
+#include <iostream>
+using namespace std;
 
-  Output:
-  Insert first number: 4
-  Insert second number: 2
+int insert_number(int& num1, int& num2)
+{
+   cin >> num1 >> num2;
+}
 
-  SUM: 6
-  Difference: 2
-  Multiplication: 8
-  Division: 2
-*/
+int main()
+{
+   int num1, num2;
+
+   cout << "Insert two numbers: ";
+   insert_number(num1, num2);
+   
+   cout << "Sum: " << num1 + num2 << endl;
+   cout << "Difference: " << num1 - num2 << endl;
+   cout << "Multiplication: " << num1 * num2 << endl;
+   cout << "Division: " << num1 / num2 << endl;
+
+   return 0;
+}
