@@ -1,6 +1,12 @@
-/*
-  Write a program that generates a random number.
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
-  Output:
-  The random number is: 4
-*/
+int main()
+{
+   srand(time(NULL));
+   cout << rand() << endl;
+
+   return 0;
+}
